@@ -28,3 +28,13 @@ myFunc(); // => "Hello, world!"
 */
 
 // LS answer
+/*
+
+    Example of describing the myFunc function with precision: 
+
+        The myFunc function outputs "Hello, world!", which it obtains from the global variable "hello", then returns undefined. The function can use the "hello" variable because it is globally scoped, and functions have access to variables defined in the outer scope.
+
+*/
+
+// Q: In programming what are we always concerned with?
+// A: I am concerned with the output and return value as well as any object mutation an non-local variables being used. 

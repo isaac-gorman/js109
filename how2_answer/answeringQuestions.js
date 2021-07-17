@@ -38,7 +38,7 @@ while (true) {
   break;
 }
 
-console.log(greeting);
+// console.log(greeting);
 
 // My explanation:
 /*
@@ -53,12 +53,26 @@ console.log(greeting);
 
   My attempt: 
 
-  - What is happening in the program?
+  What is happening in the program?
   - - On line 1 a variable called greeting is being assigned to the string "Hello"
   - - On line 3 - line 6 there is while loop that has been executed that loops while its condition is still true. 
-  - - the condition is being evaluated as true as long as true the boolean is true. Which is a syntactical convention often used with a break; statement to terminate the loop or else the while loop would loop infinitely.
-  - - Within the while loop on line 4 the greeting variable is being re-assigned globally to the string "Hi"
+  - - the while loop will execute its code block as long as its condition is evaluated as true which is already a boolean value of true. Which is a syntactical convention often used with a break; statement to terminate the loop or else the while loop would loop infinitely.
+  - - Within the while loops code block on line 4 the greeting variable is being re-assigned globally to the string "Hi". This occurs due to the scope, and in this case there is no locally scoped variable declared as "greeting" so javascript scopes "greeting" to the global scope. 
   - - Right after the re-assignment on line 5 the break; key word is called which breaks the while loop regardless of its condition. 
-  - - Finally on line 8 the console.log() method is being invoked with the greeting variable as an argument which will output to the terminal "Hi". As it was globally re-assigned from within the while loop above on line 4.
+  - - Finally on line 8 the console.log() method is being invoked with the greeting variable as an argument which will output to the terminal "Hi". As it was globally re-assigned from within the while loop block above on line 4.
+
+  Identifying The Key Concept(s):
+  - Global Scope: 
+  - - In this simple program the use of global scope is being highlighted. 
+  - Understanding loops & the break keyword:
+  - - Without the loop understanding of how loops use conditionals as test to evaluate wether they will execute their block statement(s) and the understanding of how the break statement works to terminate a block statements such as that of a loop would confuse someone.
+  
 
 */
+
+// Testing my understanding of loops, and the use of the break key word to terminate a loop
+for (let index = 0; index < 4; index++) {
+  console.log("Only one loop");
+
+  break;
+}

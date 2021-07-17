@@ -54,8 +54,8 @@ while (true) {
   My attempt: 
 
   What is happening in the program?
-  - - On line 1 a variable called greeting is being assigned to the string "Hello"
-  - - On line 3 - line 6 there is while loop that has been executed that loops while its condition is still true. 
+  - - On line 1 a variable called greeting declared at thw global scope and is being initialized to the string "Hello".
+  - - On line 3 - line 6 there is while loop declared that is set to executed as long as its condition is still true. 
   - - the while loop will execute its code block as long as its condition is evaluated as true which is already a boolean value of true. Which is a syntactical convention often used with a break; statement to terminate the loop or else the while loop would loop infinitely.
   - - Within the while loops code block on line 4 the greeting variable is being re-assigned globally to the string "Hi". This occurs due to the scope, and in this case there is no locally scoped variable declared as "greeting" so javascript scopes "greeting" to the global scope. 
   - - Right after the re-assignment on line 5 the break; key word is called which breaks the while loop regardless of its condition. 
@@ -63,7 +63,7 @@ while (true) {
 
   Identifying The Key Concept(s):
   - Global Scope: 
-  - - In this simple program the use of global scope is being highlighted. 
+  - - In this simple program the use of global scope is being highlighted. Specifically the concept that a variable declared in the outer scope is accessible within a nested inner scope.
   - Understanding loops & the break keyword:
   - - Without the loop understanding of how loops use conditionals as test to evaluate wether they will execute their block statement(s) and the understanding of how the break statement works to terminate a block statements such as that of a loop would confuse someone.
   

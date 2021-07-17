@@ -76,3 +76,8 @@ for (let index = 0; index < 4; index++) {
 
   break;
 }
+
+// below the global variable test is initialized to undefined as it has no assignment of an initial value.
+let test;
+
+console.log(test); // => undefined

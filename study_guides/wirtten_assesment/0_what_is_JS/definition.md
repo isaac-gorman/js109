@@ -48,5 +48,3 @@ _A: Scripting languages are languages that have less access computers native abi
 - With each case you access to a range of very different utilities and functionalities and do not have nothing in common at all.
 
 - When using JavaScript on the server JavaScript actually functions very similarly to standard programming languages, but when JavaScript is used on the browser it behaves more like a standard scripting language
-
-

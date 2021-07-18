@@ -19,3 +19,26 @@ _A: Programming languages are generally compiled and create an executable files,
 _A: Scripting languages are languages that have less access computers native abilities, this is because languages like JavaScript run on a subset of the original programming language that was used to write the engine that it runs on such as Google Chromes V8 engine written in C++. Limitations are by design, but for example scripting languages like JS is runs by being interpreted by a lower level language that does not give access to a computers files system. AKA scripting languages run within another program and programming languages are dependant of the exterior program. For example whenever I am writing in JS I am writing code that will target a software system such as a browser or server thanks to Node.js the systems such as the Google Chrome V8 engine or Node.js enable me to automate operations on their systems._
 
 **Q: What is a prototype-based programming language?**
+
+**Q: So what is JavaScript and how does it work?**
+
+- Well first of all there is no such thing as JavaScript
+- ECMAScript defines the basic syntax of the language and it's core mechanism
+- But JavaScript needs a standard library to be usable, and this is where things get complicated:
+- These days there are two main flavors of JavaScript:
+- - 1. JavaScript on the Browser:
+- - 2. JavaScript on the Server:
+
+- On the browser JavaScript is provided a bunch of utilities such as:
+- - Modifying the DOM
+- - Making network request (Fetch, XMLHttpRequest)
+- - Managing Data (Web Storage, IndexedDB)
+- - Doing audio and graphics rendering
+- - Using web sockets
+- - Touch events
+- - Geo-location
+- - and many many more ....
+
+
+- Using JavaScript on the server using Node.js gives completely different tools to enable you to manage the computer directly such as: 
+- - 

@@ -1,10 +1,18 @@
 // Q: What should I know before diving into the definitions of variable declaration, initialization, assignment, and re-assignment?
 
 /*Review Q&A: 
-  - What are variables?
-  - What are identifiers?
-  - What is the assignment operator?
-  - Recall what data types are.
+  - Q: What are variables?
+    - A: Variables are containers for storing data (values).
+
+  - Q: What are identifiers?
+      - A: Variables need to be identified with unique names.
+
+  - Q: What is the assignment operator?
+      - A: "=" the assignment operators assigns values to variables.
+
+
+  - Q: Recall what data types are.
+      - A: Variables can contain all data types, primitives, objects, and functions.
 */
 
 // Q: What is variable declaration?
@@ -67,4 +75,9 @@
 // Q: What is variable re-assignment?
 /* Answer:
    - Variable re-assignment is the act of giving a new value or assigning a new value to an existing variable with the use of the assignment operator `=`. 
+*/
+/* Definitions:
+
+  - The word variable comes from the latin word variāre which means "to make changeable". This is a apt name because the value assigned to a variable can change. The process of reassigning a variable is called reassignment.
+
 */

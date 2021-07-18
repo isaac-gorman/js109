@@ -1,6 +1,10 @@
 // Q: What should I know before diving into the definitions of variable declaration, initialization, assignment, and re-assignment?
 
 /*Review Q&A: 
+
+  - Q: What is the JavaScript interpreter?
+    - A: 
+
   - Q: What are variables?
     - A: Variables are containers for storing data (values).
 
@@ -13,6 +17,7 @@
 
   - Q: Recall what data types are.
       - A: Variables can contain all data types, primitives, objects, and functions.
+
 */
 
 // Q: What is variable declaration?

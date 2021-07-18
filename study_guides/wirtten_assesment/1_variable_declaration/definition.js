@@ -1,3 +1,12 @@
+// Q: What should I know before diving into the definitions of variable declaration, initialization, assignment, and re-assignment?
+
+/*Review Q&A: 
+  - What are variables?
+  - What are identifiers?
+  - What is the assignment operator?
+  - Recall what data types are.
+*/
+
 // Q: What is variable declaration?
 /* Answer:
    - Variable declaration is when you first define a variable give it its name, and initialize it to a value.
@@ -21,13 +30,19 @@
 
   Q: Can I use variables in JS before using them?
   - A: No. You have to declare variables "create them" before you can use them. The act of storing a value in variable is called "initialization"
+
+  Q: How many ways can we declare a variable?
+  - A: 3 ways using there different keywords:
+       1. var
+       2. let
+       3. const
 */
 
 // Q: What is variable initialization?
 /* Answer:
    - variable initialization is when you first declare a variable and assign it a value. Note that when ever a value is not explicitly assigned it will be initialized as undefined.
 */
-/*More Definitions:
+/*Definitions:
     Q: So what does it mean to initialize a variable?
     - A: Initialization is the action of storing a value (data) into a variable.
 
@@ -40,9 +55,13 @@
     Q: Why do we initialize variables in JavaScript?
     - A: We explicity store values (data) in variables named by their identifiers to provide an idea of their intended use (and int)
 */
+
 // Q: What is variable assignment?
 /* Answer:
    - Variable assignment is the action of assigning a value to a variable using the assignment operator `=`. This can happen at anytime during the life time of a variable.
+*/
+/* Definitions:
+  - Variable assignment is the use of a the assignment operator `=` to initialize a variable with a value. (store a value in a variable).
 */
 
 // Q: What is variable re-assignment?

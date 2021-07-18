@@ -2,49 +2,46 @@
 
 **Topics:**
 
-- [ ] Declarations, initialization, assignment, and re-assignment
+1. [ ] Declarations, initialization, assignment, and re-assignment
 
-- [ ] Variable scope, especially how variables interact with function definitions and blocks
+2. [ ] Variable scope, especially how variables interact with function definitions and blocks
 
-- [ ] Primitive values, objects, and type coercions
+3. [ ] Primitive values, objects, and type coercions
 
-- [ ] Object properties
+4. [ ] Object properties
 
-- [ ] Mutability vs. immutability vs. `const`
+5. [ ] Mutability vs. immutability vs. `const`
 
-- [ ] Loose and strict equality
+6. [ ] Loose and strict equality
 
-- [ ] Passing arguments into a arguments out of functions
+7. [ ] Passing arguments into a arguments out of functions
 
-- [ ] Working with the `String` data type.
+8. [ ] Working with the `String` data type.
 
-- [ ] Working with the `Array`, especially the iteration methods (`forEach`, `map`, `filter`, and `find`)
+9. [ ] Working with the `Array`, especially the iteration methods (`forEach`, `map`, `filter`, and `find`)
 
-\*\*
+10. [ ] Working with the `Object` data type; specifically accessing keys and values of an Object as as arrays
 
-- [ ] Working with the `Object` data type; specifically accessing keys and values of an Object as as arrays
-      \*\*
+11. [ ] Arrays are objects
 
-- [ ] Arrays are objects
+12. [ ] Understand the concept of pass-by-reference and pass-by-value
 
-- [ ] Understand the concept of pass-by-reference and pass-by-value
+13. [ ] Variables as pointers
 
-- [ ] Variables as pointers
+14. [ ] console.log vs. return
 
-- [ ] console.log vs. return
+15. [ ] truthiness vs. boolean
 
-- [ ] truthiness vs. boolean
+16. [ ] function definition and invocation
 
-- [ ] function definition and invocation
+17. [ ] function declarations, function expressions, and arrow functions
 
-- [ ] function declarations, function expressions, and arrow functions
+18. [ ] implicit return value of function invocations
 
-- [ ] implicit return value of function invocations
+19. [ ] first-class functions
 
-- [ ] first-class functions
+20. [ ] side-effects
 
-- [ ] side-effects
+21. [ ] naming conventions (legal vs idiomatic)
 
-- [ ] naming conventions (legal vs idiomatic)
-
-- [ ] be able to explain what function does at the user level; without talking about its implementation; that is, document a function's use and purpose
+22. [ ] be able to explain what function does at the user level; without talking about its implementation; that is, document a function's use and purpose

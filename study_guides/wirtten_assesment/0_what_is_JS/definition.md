@@ -39,6 +39,14 @@ _A: Scripting languages are languages that have less access computers native abi
 - - Geo-location
 - - and many many more ....
 
+- Using JavaScript on the server using Node.js gives completely different tools to enable you to manage the computer directly such as:
+- - Path OS
+- - File System
+- - Handle network resources (Net, URL, HTTP/2)
+- - Create process
 
-- Using JavaScript on the server using Node.js gives completely different tools to enable you to manage the computer directly such as: 
-- - 
+- With each case you access to a range of very different utilities and functionalities and do not have nothing in common at all.
+
+- When using JavaScript on the server JavaScript actually functions very similarly to standard programming languages, but when JavaScript is used on the browser it behaves more like a standard scripting language
+
+

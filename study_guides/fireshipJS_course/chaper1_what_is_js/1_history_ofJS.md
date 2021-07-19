@@ -41,3 +41,6 @@ A: The scope of the TC39 team is to:
 
 Q: Why was the release of Google's Chrome V8 engine such a big deal?
 A: V8 was a big deal because V8 completely changed how JavaScript was complied and interpreted.
+
+Q: What was groundbreaking after the release of V8?
+A: Node.js Ryan Dahl built Node.js a server side runtime for JavaScript that was built on top of V8. Which included something unique, an event loop which enabled developers to write event driven non blocking code.

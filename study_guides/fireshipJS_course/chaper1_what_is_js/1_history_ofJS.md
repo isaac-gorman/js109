@@ -31,3 +31,13 @@ A: The ES# is used by server side applications and browser vendors such as Googl
 Q: Is there an analogy that can be used to describe the relationship between ecma-script and java-script?
 A: Stay with me here... the relationship between ecma-script and js is similar to how the EPA The United States Environmental Protection Agency sets emission standards which limits the amount of amount of pollution a vehicle can emit. These EPA standards are then implemented by the car manufactures to assure their vehicles are not polluting over the standard.
 
+Q: Who is apart of TC39 group that regulates and votes on ECMAScript features?
+A: Companies big and small from Facebook, Google and Tesla all the way to small 1 - 25 employee companies can vote.
+
+Q: So what is within the scope for what TC39 or Technical Group 39 does in regards for ECMAScript?
+A: The scope of the TC39 team is to:
+
+- Standardize the language syntax, semantics, and libraries and complementary technologies that support the language.
+
+Q: Why was the release of Google's Chrome V8 engine such a big deal?
+A: V8 was a big deal because V8 completely changed how JavaScript was complied and interpreted.

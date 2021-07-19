@@ -7,4 +7,16 @@ A: ECMAScript is the JavaScript standard. ECMA stand for European Computer Manuf
 Q: What is ECMAScripts relationship with JavaScript?
 A: JavaScript is just the implementation of ECMAScript.
 
+Q: What is ES6?
+A: ECMAScript 6 is the update of ES% which was standardized in 2009.
+
 Q: What are the various releases of ECMAScript?
+A: ECMAScript has been standardizing and adding new features to JavaScript for over 25 years. Here are the releases:
+
+- ES1 1997
+- ES2 1998
+- ES3 1999. The longest standing version of early JS.
+- ES4 Never finalized.
+- ES5 2009. Added JSON, strict mode, functional programming array methods, and more.
+- ES6 2015. Added classes, promises, arrow functions, let/const, and much more.
+- ES7, ES8, ES9 ESNext. Modern updates now being release annually.

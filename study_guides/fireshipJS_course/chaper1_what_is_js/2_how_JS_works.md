@@ -24,6 +24,13 @@ A: The JavaScript runtime refers to where your code is executed when you run it.
 Q: What is garbage collection?
 A: Most low-level languages like C, have manual memory management primitives such as malloc(), and free(). In contrast JS automatically allocates memory when objects are created then frees it when they are not used anymore they are garbage collected. But this does not mean that I shouldn't care about memory management. Developers need to be familiar with the memory life cycle.
 
+Q: What is the life cycle of memory?
+A: The memory life cycle is pretty much the same across all languages.
+
+1. Allocate the memory needed
+2. Use the allocated memory (read, write)
+3. Release that allocated memory when it is not needed anymore.
+
 #### Interpreted of Just-in-Time Complied
 
 Q: What is byte-code?

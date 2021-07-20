@@ -31,10 +31,10 @@ A: For example when a value is encountered within an `if` statement it will beco
 ### Hoisting
 
 Q: What does hoisting mean?
-A: Hoisting mean that your declarations, i.e. functions and variables will always be placed in memory at the top of the execution context.
+A: Hoisting mean that your declarations, i.e. functions will always be placed in memory at the top of the execution context.
 
 Q: What is the code block displaying? What concept is being highlighted?
-A: That before a file is compiled all functions and variable are hoisted to the top of the file so you can actually call functions and or variable before the are initialized.
+A: That before a file is compiled all functions are hoisted to the top of the file so you can actually call functions and or variable before the are initialized.
 
 ### Closures
 

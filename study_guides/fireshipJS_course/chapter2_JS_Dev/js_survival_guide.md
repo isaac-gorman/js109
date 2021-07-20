@@ -25,9 +25,8 @@ A: Objects are collections of key/value pairs and are used as building blocks fo
 
 ### Truthy vs Falsy
 
-Q: What does encounted mean in the context of JS?
-
-Q: What happens when a value is encounted in a Boolean context?
+Q: What happens when a value is encountered in a Boolean context?
+A: For example when a value is encountered within an `if` statement it will become coerced into a boolean. If there the result is true then the value is `truthy`, and vice versa. If you are unsure about a value you can convert it using a logical `!` NOT operator twice, or a double bang as I like to call it `!!`
 
 ### Hoisting
 

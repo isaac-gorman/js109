@@ -153,3 +153,16 @@ Pug.barks; // => true
    - But the way JavaScript dev's implement (write) code is the same.
 
 */
+
+//  Q: When executing JS code where is memory allocated?
+/* Answer: 
+
+//  Q: What is the call stack?
+/* Answer: 
+
+   - The call stack is designed to be a high performance region of memory used to execute my functions.
+
+   - When ever you call function the runtime engine creates frame in the call stack that contains a copy of its local variables.
+
+   - When you call a function within a function (higher-order function capability) it will add another frame on the stack. And when you return from a function it will pop that frame off the stack. 
+*/

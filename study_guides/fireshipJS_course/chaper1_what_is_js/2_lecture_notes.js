@@ -133,3 +133,23 @@ Pug.barks; // => true
      So these implementation details are up to the browser vendors.
 
 */
+
+// Q: How does Chrome's V8 do that is the same as Mozilla's spider monkey engine?
+/* Answer:
+
+   - They both do something called Just-in-Time compilation.
+
+   - In V8's case its JIT implementation works by: 
+        - Compiles all of your JS to native machine code before running it.
+   
+   - This optimization is on contrast to how a normal interpreter works by interpreting line by line 
+
+*/
+
+// Q: So what affect does V8's JIT implementation have on developers?
+/* Answer: 
+
+   - V8's JIT compiler improves the performance of the browser and on node. 
+   - But the way JavaScript dev's implement (write) code is the same.
+
+*/

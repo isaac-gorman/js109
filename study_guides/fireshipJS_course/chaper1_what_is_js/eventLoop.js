@@ -4,3 +4,5 @@
 while (queueMicrotask.waitForMessage()) {
   queueMicrotask.processNextMessage();
 }
+
+console.log("test!");

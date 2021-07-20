@@ -34,8 +34,16 @@ A: The memory life cycle is pretty much the same across all languages.
 #### Interpreted of Just-in-Time Complied
 
 Q: What is byte-code?
+A: Byte code is the "middle man" intermediate code between the source code and the machine code.
 
 Q: What does interpreted mean?
+A: Interpreted in CS means that source code is converted to byte-code and executed at run time (as opposed to being compiled to a machine code binary at build time.)
+
+Q: Why is JavaScript common called a "scripting language"?
+A: Because originally JS was only interpreted (converted to byte-code).
+
+Q: What have modern JS engines enabled for developers?
+A: Modern JS such as V8, Spider-monkey, and Nitro use various techniques to preform "Just-in-Time Compilation" of "JIT" for better performance. Now developers still use JS like an interpreted language, while the engine magically compiles parts of the source code to low level machine code behind the scenes.
 
 #### Multi-Paradigm
 

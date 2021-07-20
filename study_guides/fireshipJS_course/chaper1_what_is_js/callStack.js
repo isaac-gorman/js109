@@ -12,4 +12,4 @@ function currentStatus() {
   return mood(happy());
 }
 
-currentStatus()
+currentStatus();

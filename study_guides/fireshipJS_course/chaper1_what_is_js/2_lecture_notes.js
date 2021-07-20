@@ -166,3 +166,26 @@ Pug.barks; // => true
 
    - When you call a function within a function (higher-order function capability) it will add another frame on the stack. And when you return from a function it will pop that frame off the stack. 
 */
+
+// Q: When does the heap come into play?
+/* Answer: 
+
+   - The heap comes into play once we you come across programs that are a little more complex such as: 
+        - An object that might be referenced by multiple function calls outside of its local context.
+
+*/
+
+// Q: What is the heap?
+/* Answer: 
+
+   - The heap is mostly a unstructured memory pool where we store things like objects or values inside of closures 
+
+*/
+
+// Q: What is significant about the heap?
+/* Answer: 
+
+
+  - The heap is garbage collected
+
+*/

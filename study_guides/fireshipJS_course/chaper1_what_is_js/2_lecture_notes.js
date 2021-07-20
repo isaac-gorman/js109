@@ -106,3 +106,30 @@ const Pug = Object.create(Dog);
 Pug.barks; // => true
 
 // This concept of using prototypal inheritance is core to makes JS so flexible multi-paradigm language.
+
+// Q: What are the first parts of the definition of JavaScript?
+/* Answer:
+   1. High-level
+   2. Dynamically typed 
+   3. Multi-paradigm
+   4. Prototype Inheritance 
+*/
+
+// Q: Who established the 4 for attributes to JavaScript?
+/* Answer: 
+   
+   - ECMA
+
+*/
+
+// Q: What doesn't the ECMA standardization document outline for JavaScript?
+/* Answer:
+
+   - The ECMA standardization document does not outline: 
+     - How the interpreter should be implemented
+     - How to manage memory
+     - Does not mention the event loop
+
+     So these implementation details are up to the browser vendors.
+
+*/

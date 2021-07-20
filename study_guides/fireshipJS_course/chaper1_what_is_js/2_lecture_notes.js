@@ -189,3 +189,10 @@ Pug.barks; // => true
   - The heap is garbage collected
 
 */
+
+// Q: The event loop... whats the deal with the event loop? How do we handle any long running task? Or how do we handle stuff at the same time?
+/* Answer: 
+
+   - The event loop
+
+*/

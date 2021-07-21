@@ -43,3 +43,8 @@ A: A closure is the combination of a function bundled together (enclosed) with r
 
 Q: What is the lexical environment?
 A: Every time the JavaScript engine creates an execution context to execute the function or global code, it also creates a new lexical environment to store the variable defined in that function during the execution of that function. A lexical environment is a data structure that holds identifier-variable mapping.
+
+_Lexical environment of lexical context is the same thing as scope block._
+
+Q: But really what is closure?
+A: A lexical environment within a other lexical environment where the outer lexical environment's local variables remain available in memory after creation.

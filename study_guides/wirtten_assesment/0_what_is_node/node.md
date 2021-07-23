@@ -35,3 +35,13 @@ Concurrency x Memory
 ![](images/memory.jpeg)
 
 _NGINX's memory is virtually unaffected by the amount of current connections (clients on the server) as compared to apaches memory. NGINX stays with a very stable as clients begin to hit the server and remains with a relatively small footprint_
+
+Q: So what is driving such a performance advantage by NGINX over Apache? What is the difference?
+A: Apache uses one thread per connection. While NGINX does not use threads. It uses an event loop.
+A: So the event loop is what is driving that performance advantage.
+
+Q: What is a thread?
+A: A thread is the mechanism that executes commands to the CPU. In CS a thread of execution is the smallest sequence of programming instructions that can be managed independently by a scheduler, which is typically a part of the operating system.
+
+Q: So what makes JavaScript great for working with a server that can scale well with ever increasing request?
+A: JavaScript was designed to specifically be used with the event loop. Think of browser side JavaScript it is an event loop. When I create a button, someone clicks it I get an onclick callback.

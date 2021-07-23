@@ -28,10 +28,10 @@ Concurrency x Request per Second
 
 ![](images/graph.jpeg)
 
-_As you can see nginx servers have much better performance req per sec as concurrent connections increase than apache servers_
+_As you can see nginx servers have much better performance req per sec as concurrent connections (clients on the server) increase than apache servers_
 
 Concurrency x Memory
 
 ![](images/memory.jpeg)
 
-_NGINX's memory is virtually unaffected by the amount of current connections as compared to apaches memory._
+_NGINX's memory is virtually unaffected by the amount of current connections (clients on the server) as compared to apaches memory. NGINX stays with a very stable as clients begin to hit the server and remains with a relatively small footprint_

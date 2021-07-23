@@ -26,7 +26,6 @@ Q: So what was NGINX, and Apache doing right and what are they doing wrong?
 
 _concurrency x req/sec_
 
-![Image of graph of apache vs nginx performance]
-('./graph.jpeg')
+![](graph.jpeg)
 
 # Test!!

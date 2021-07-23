@@ -23,9 +23,10 @@ A: You want your application to multitask and not have to wait on a request that
 Q: So what was NGINX, and Apache doing right and what are they doing wrong?
 
 **Apache vs NGINX**
+
 _concurrency x req/sec_
 
-![graph of apache vs nginx performance]
+![Image of graph of apache vs nginx performance]
 (https://www.nginx.com/wp-content/uploads/2014/04/requests-per-second-nginx-vs-apache.jpg)
 
 # Test!!

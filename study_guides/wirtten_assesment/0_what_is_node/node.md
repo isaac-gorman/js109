@@ -24,8 +24,14 @@ Q: So what was NGINX, and Apache doing right and what are they doing wrong?
 
 **Apache vs NGINX**
 
-_concurrency x req/sec_
+Concurrency x Request per Second
 
-![](graph.jpeg)
+![](images/graph.jpeg)
 
 _As you can see nginx servers have much better performance req per sec as concurrent connections increase than apache servers_
+
+Concurrency x Memory
+
+![](images/memory.jpeg)
+
+_NGINX's memory is virtually unaffected by the amount of current connections as compared to apaches memory._

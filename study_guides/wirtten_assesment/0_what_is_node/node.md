@@ -27,6 +27,6 @@ Q: So what was NGINX, and Apache doing right and what are they doing wrong?
 _concurrency x req/sec_
 
 ![Image of graph of apache vs nginx performance]
-(https://www.nginx.com/wp-content/uploads/2014/04/requests-per-second-nginx-vs-apache.jpg)
+('./graph.jpeg')
 
 # Test!!

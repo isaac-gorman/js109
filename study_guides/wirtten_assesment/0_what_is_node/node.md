@@ -23,9 +23,25 @@ A: You want your application to multitask and not have to wait on a request that
 Q: So what was NGINX, and Apache doing right and what are they doing wrong?
 
 **Apache vs NGINX**
-_concurrency x req/sec_
 
-![graph of apache vs nginx performance]
-(https://www.nginx.com/wp-content/uploads/2014/04/requests-per-second-nginx-vs-apache.jpg)
+Concurrency x Request per Second
 
-# Test!!
+![](images/graph.jpeg)
+
+_As you can see nginx servers have much better performance req per sec as concurrent connections (clients on the server) increase than apache servers_
+
+Concurrency x Memory
+
+![](images/memory.jpeg)
+
+_NGINX's memory is virtually unaffected by the amount of current connections (clients on the server) as compared to apaches memory. NGINX stays with a very stable as clients begin to hit the server and remains with a relatively small footprint_
+
+Q: So what is driving such a performance advantage by NGINX over Apache? What is the difference?
+A: Apache uses one thread per connection. While NGINX does not use threads. It uses an event loop.
+A: So the event loop is what is driving that performance advantage.
+
+Q: What is a thread?
+A: A thread is the mechanism that executes commands to the CPU. In CS a thread of execution is the smallest sequence of programming instructions that can be managed independently by a scheduler, which is typically a part of the operating system.
+
+Q: So what makes JavaScript great for working with a server that can scale well with ever increasing request?
+A: JavaScript was designed to specifically be used with the event loop. Think of browser side JavaScript it is an event loop. When I create a button, someone clicks it I get an onclick callback.

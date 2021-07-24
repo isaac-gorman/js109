@@ -48,6 +48,6 @@ console.log(x);
 // A: When the JS runs the JS engine will place the global context (denoted main() or global()) function on the call stack
 
 // Q: After the the JS engine places the global context (denoted by main or global()) what happens next?
-// A: The global execution context enters the creation phase and moves to the execution phase. The JS engine begins to execute the call stack to the average(10, 20) function and creates a function execution context for the average function and pushes it to the top of the call stack
+// A: The global execution context enters the creation phase and moves to the execution phase. The JS engine begins to execute the call to the average(10, 20) function and creates a function execution context for the average function and pushes it to the top of the call stack
 
 //

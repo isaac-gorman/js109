@@ -32,6 +32,10 @@
 
 // JavaScript Call Stack Example
 
+let yUniqueValue = 20;
+
+let lUniqueValue = 40;
+
 function add(a, b) {
   return a + b;
 }
@@ -40,9 +44,9 @@ function average(a, b) {
   return add(a, b) / 2;
 }
 
-let x = average(10, 20); // => 15
+let xUniqueValue = average(yUniqueValue, lUniqueValue); // => 30
 
-console.log(x);
+console.log(xUniqueValue);
 
 // Q: What happens when the script runs?
 // A: When the JS runs the JS engine will place the global context (denoted main() or global()) function on the call stack
@@ -51,3 +55,11 @@ console.log(x);
 // A: The global execution context enters the creation phase and moves to the execution phase. The JS engine begins to execute the call to the average(10, 20) function and creates a function execution context for the average function and pushes it to the top of the call stack
 
 //
+
+// Asynchronous JavaScript:
+
+// Q: Type of thread does JS use?
+
+// Q: In what order does JS execute script?
+
+// Q:

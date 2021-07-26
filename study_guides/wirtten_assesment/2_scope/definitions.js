@@ -45,3 +45,13 @@ const GLOBAL_CONSTANT = 100;
 // console.log(varVariable);
 // console.log(letVariable); // => Reference Error
 // console.log(constVariable); // => Reference Error
+
+// Q: Why are variables defined with the var key word accessible on the global scope?
+// A: For one var is function scoped meaning that it is only accessible within the lexicon environment of the block of the function.
+
+function test() {
+  var name = "Isaac";
+  return name;
+}
+
+// console.log(name); // => Reference Error

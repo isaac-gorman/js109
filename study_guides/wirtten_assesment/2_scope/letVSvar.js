@@ -1,11 +1,11 @@
 // 1. Re-declaration:
-function withVar() {
-  var x = 1;
-  var x = 5;
-  // second x variable shadows the first x variable. Now first x is going to behave like it never existed.
-  // Q: Why is shadowing bad?
-  // A: Shadowing can make it difficult to solve bugs in the program
-}
+// function withVar() {
+//   var x = 1;
+//   var x = 5;
+//   // second x variable shadows the first x variable. Now first x is going to behave like it never existed.
+//   // Q: Why is shadowing bad?
+//   // A: Shadowing can make it difficult to solve bugs in the program
+// }
 
 // function withLet() {
 //   var x = 1;
@@ -21,32 +21,53 @@ function withVar() {
 
 // 2. Scope
 
-function withVar() {
-  var i = 8;
+// function withVar() {
+//   var i = 8;
 
-  for (var i = 0; i < 1; i++) {
-    var x = 17;
-  }
+//   for (var i = 0; i < 1; i++) {
+//     var x = 17;
+//   }
 
-  //   console.log(`x = ${x}`); // x = 17
-  console.log(`i = ${i}`);
-}
+//   //   console.log(`x = ${x}`); // x = 17
+//   console.log(`i = ${i}`);
+// }
 
-function withLet() {
-  let i = 8;
-  for (let i = 0; i < 1; i++) {
-    //   the above i variable is actually local to the for loop scope
-    //  but i is still shadowing the i from its outer scope but it does not give a syntax error
-    let x = 17;
-  }
+// function withLet() {
+//   let i = 8;
+//   for (let i = 0; i < 1; i++) {
+//     //   the above i variable is actually local to the for loop scope
+//     //  but i is still shadowing the i from its outer scope but it does not give a syntax error
+//     let x = 17;
+//   }
 
-  //   console.log(`x = ${x}`);
-  console.log(`i = ${i}`);
-}
+//   //   console.log(`x = ${x}`);
+//   console.log(`i = ${i}`);
+// }
 
 // withVar(); // => x = 17
 // withLet(); // => Reference Error x is not defined.
 
+// 3. Hoisting
+
+function withVar() {
+  var numberOfCars;
+  if (!numberOfCars) {
+    console.log("the variable is undefined, and was hoisted");
+  }
+
+  numberOfCars = 5;
+}
+
+function withLet() {
+  if (!numberOfCars) {
+    console.log("nope");
+  }
+
+  let numberOfCars = 5;
+}
+
+// withLet(); // ReferenceError cannot access numberOfCars before initialization
+// withVar();
 // Q: What are three important difference between let and var? And why should I use let?
 /* Answer:
 

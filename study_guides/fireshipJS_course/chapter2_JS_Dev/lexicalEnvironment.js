@@ -1,3 +1,4 @@
+// https://jstutorial.medium.com/javascript-tutorial-lexical-environment-3ee161bb2295
 // The Lexical Environment:
 /* Q&A:
 
@@ -25,6 +26,8 @@
 // Q: What concepts are built on top of lexical environment?
 
 // Q: What is the difference between the var and let key word?
+// A: let conceals that variable to its own scope. It provides a cage around your data to protect it and limit it that scope only. AKA that variable most likely only needs to be used within that block scope.
+// A: var declared variables on the other hand are hoisted (lifted up) the  variable definition (its identifer) up all the way to the global scope. Unless they var declared variables are declared within a function scope. In that case they are limited to the function as its outer most scope. This is true regardless whether I am using let or var. This is also true for callback functions which are function scoped (functions declared within a function)
 
 // Q: What is the exception to the capability of var and let?
 

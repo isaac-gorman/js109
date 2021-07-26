@@ -25,16 +25,19 @@
    - Variable declaration is when you first define a variable give it its name, and initialize it to a value.
 */
 /*Textbook Definition:
-   - Variable declaration is a statement that asks the JavaScript engine to reserve space for a variable with a particular name. 
+   - Variable declaration is a statement that asks the JavaScript engine to reserve space for a variable with a particular name. The engine will reserve space for this variable within the heap once it is initialized by the runtime.
 
    - Furthermore, the JS engine gives the option to specify an initial value for the variable.
 
-   - There are several ways to declare variables, but the preferred way in modern JavaScript uses the `let` keyword.
+   - There are several ways to declare variables, but the preferred way in modern JavaScript uses the `let` keyword. var and let are variable keywords that can be re-assigned or mutated during the execution of the program. "const" is a keyword on the other hand for declaring constant values. these constants are values that you do not want to re-assign or mutate during the execution of the program.
 
 
 */
 /*w3school Definition: 
   - Variable declaration is the the creation of a variable in JavaScript. 
+  - Variable declaration is the act of defining a values space in memory for example: 
+    - let space1; 
+      the identifier "space1" is basically the address of where to find whatever is stored in that variable. For now the space1 variable will be initialized to undefined upon execution of the JS global execution context if it is not explicitly assigned a value.
 
 */
 /*More Definitions: 
@@ -54,6 +57,7 @@
 // Q: What is variable initialization?
 /* Answer:
    - variable initialization is when you first declare a variable and assign it a value. Note that when ever a value is not explicitly assigned it will be initialized as undefined.
+   - variable initialization is the act of assigning a variable a value. Initialization is the act of storing data into a variable.
 */
 /*Definitions:
     Q: So what does it mean to initialize a variable?

@@ -2,9 +2,9 @@
 
 **Topics:**
 
-1. [ ] Declarations, initialization, assignment, and re-assignment
+1. [x] Declarations, initialization, assignment, and re-assignment
 
-2. [ ] Variable scope, especially how variables interact with function definitions and blocks
+2. [x] Variable scope, especially how variables interact with function definitions and blocks
 
 3. [ ] Primitive values, objects, and type coercions
 

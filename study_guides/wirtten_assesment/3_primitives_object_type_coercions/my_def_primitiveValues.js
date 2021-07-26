@@ -47,30 +47,74 @@
 
 // Q: How is JavaScript a dynamically type language?
 /* Answer:
- 
+    
+   JavaScript is dynamically typed and not statically typed like other languages (Java, C) because value types within variables not need to be defined before run-time. This enables the ability to: 
+    1. Run our scripts immediately
+    2. It allows our program the ability to alter values during runtime (type coercion)
+    3. Enables for more polymorphism.
+
 */
 
 // Q: How can I check the type of a value in JS?
 /* Answer:
+
+    You can check any type by using the typeof operator.
+
+    let firstName = "Kurt"
+    let lastName = "Cobain"
+
+    console.log(typeof lastName) => "string"
  
 */
 
 // Q: What are truthy and falsy values?
 /* Answer:
+
+   Whenever a noon boolean value is used in the context of a boolean JavaScript uses type coercion to coerce the value to either true or false.
+
+   What truthy and falsy values are not: they are not booleans so they are not true or false.
+   Truthy or falsy values are values that evaluate to either truthy or falsy values that can be used in place of truth or false boolean types to help the program make decisions or test conditions.
+
+   AKA truthy and falsy values are values that are considered either true or false encountered in a boolean context.
  
 */
 
 // Q: What are falsy values?
 /* Answer:
+
+   Falsy values are anything that gets evaluated as false in a condition 
+
+   Falsy values are: 
+   0n
+   ""
+   0
+   undefined
+   null
+   NaN
+   -0
+
  
 */
 
 // Q: What are truthy values?
 /* Answer:
  
+    {}
+    "..."
+    []
+    1
+
+
 */
 
 // Q: How can I check if a value is truthy or not?
 /* Answer:
  
+   double bang !!
+
+   !! double NOT operator (coerces a value to opposite, opposite boolean value)
 */
+
+let number = !!0;
+
+// console.log(number); // => false

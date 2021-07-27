@@ -15,5 +15,5 @@
 // Q: When I declare and initialize a variables where is it stored?
 // Q: Well it depends. When JS files are executed in the runtime variables are store in either two places: the stack or the heap. The basic rule is primitive data types are stored on the stack and object types (array, object, and functions) are stored in the heap. The call stack is a memory allocation that executes our functions, and the memory heap is what stores complex data types such as (function, objects, and arrays) .
 
-// Article:
+// JavaScript’s Memory Model Article:
 // https://medium.com/@ethannam/javascripts-memory-model-7c972cd2c239

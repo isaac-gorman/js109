@@ -20,7 +20,7 @@ a = 20;
 // Q: All non-primitive value type interact in which way?
 // A: All non-primitive values interact via reference address to the heap from the stack. When initializing a new variable to the other.
 
-const c = [1];
+let c = [1];
 const d = c;
 
 c.push(2);
@@ -29,17 +29,60 @@ d; // => [1, 2]
 
 // Memory Model
 /*
--------------------------------------------------------------------------------   
-Identifier(s) |     Call Stack        |                     Heap               |
--------------------------------------------------------------------------------   
-    c,d       |   Address   |    Value    |   Address    |   Value (Object)    |   
--------------------------------------------------------------------------------   
-              | 002343HSC90 | 0HAHSK90J12 | 0HAHSK90J12  |   [ 1 ]             |
--------------------------------------------------------------------------------   
-              |
--------------------------------------------------------------------------------         
+
+Initialization 
+------------------------------------------------------------------------------------   
+|                   Call Stack                |             Heap                    |
+------------------------------------------------------------------------------------   
+|  Identifier(s)   |   Address   |    Value    |   Address    |   Value (Object)    |   
+------------------------------------------------------------------------------------   
+|    c, d          | 002343HSC90 | 0HAHSK90J12 | 0HAHSK90J12  |   [ 1 ]             |
+------------------------------------------------------------------------------------   
+|                  |           
+------------------------------------------------------------------------------------         
+
+
+Mutation
+------------------------------------------------------------------------------------   
+|                   Call Stack                |             Heap                    |
+------------------------------------------------------------------------------------   
+|  Identifier(s)   |   Address   |    Value    |   Address    |   Value (Object)    |   
+------------------------------------------------------------------------------------   
+|    c, d          | 002343HSC90 | 0HAHSK90J12 | 0HAHSK90J12  |   [ 1, 2 ]          |
+------------------------------------------------------------------------------------   
+|                  |           
+------------------------------------------------------------------------------------         
 */
 
 // Q: What is occurring in memory when we initialize a variable to a non-primitive type?
+// A: Whenever you initialize a variable to a non-primitive their identifier will actually point to the same address in the call stack which will contain a heap address as a value which points to the address of the object in the heap. Whenever I mutate variable c's array am also mutating d's array too because they c and d both point to the same address in memory.
 
-// Q: What is happening under the hood?
+// Q: What happens if I reassign the c variable to a completely different array as such:
+c = ["bread", "butter"];
+/* Memory Model: 
+
+Initialization 
+------------------------------------------------------------------------------------   
+|                   Call Stack                |             Heap                    |
+------------------------------------------------------------------------------------   
+|  Identifier(s)   |   Address   |    Value    |   Address    |   Value (Object)    |   
+------------------------------------------------------------------------------------   
+|    c, d          | 002343HSC90 | 0HAHSK90J12 | 0HAHSK90J12  |    [ 1, 2 ]         |
+------------------------------------------------------------------------------------   
+|                  |           
+------------------------------------------------------------------------------------         
+
+Re-Assignment
+------------------------------------------------------------------------------------   
+|                   Call Stack                 |             Heap                     |
+------------------------------------------------------------------------------------   
+|  Identifier(s)   |   Address   |    Value    |   Address    |   Value (Object)      |   
+------------------------------------------------------------------------------------   
+|       d          | 002343HSC90 | 0HAHSK90J12 | 0HAHSK90J12  |   [ 1, 2 ]            |
+------------------------------------------------------------------------------------   
+|       c          | 012893DWENI | 0002CHJJJLK | 0002CHJJJLK  | [ "bread", "butter" ] |
+------------------------------------------------------------------------------------         
+*/
+
+// Written Explanation:
+// - As we re-assign the c variable c now will point to a brand new address on the call stack which will store a value of another address that points to the actual array in the heap. Thus leaving the d variable completely unaffected by the re-assignment d will still reference its array in memory.
